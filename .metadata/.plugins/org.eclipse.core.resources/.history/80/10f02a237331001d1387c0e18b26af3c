@@ -1,0 +1,70 @@
+package com.googlemaps.appframe;
+
+
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
+
+import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.MobileElement;
+
+
+public class BaseTest {
+
+	public static String  device;
+	protected Map<String, String> dataTable = new HashMap<String, String>();
+	List<String> propertyFiles = new ArrayList<String>();
+	//TestDataUtils data = new TestDataUtils();
+	
+	protected static AppiumDriver<MobileElement> driver;
+	
+
+	protected void launchApp() {
+		driver.launchApp();
+		
+	}
+	protected void resetApp() {
+
+	driver.resetApp();
+	}
+	
+
+
+	
+	@Parameters({ "OS_", "deviceName_", "UDID_","appPackage_", "platformVersion_", "URL_", "appPath_","testsuitename_" })	
+	@BeforeTest(alwaysRun = true)
+	public void driverSetup(@Optional("android") String OS,@Optional String deviceName,
+			@Optional String UDID,@Optional String appPackage,@Optional String platformVersion,@Optional String URL,
+			@Optional("") String appPath,@Optional String testSuiteName )throws IOException, InterruptedException {
+
+		System.out.println("BaseTest: Setting driver...");
+		try {
+		driver=DriverManager.setDriver(OS, deviceName, UDID,appPackage, platformVersion, URL, appPath,testSuiteName);
+		device = deviceName.toLowerCase(); 
+		System.out.println("Driver launched");
+
+		}
+		
+		catch(Exception e){
+
+			e.printStackTrace();
+
+		}
+
+	}
+
+	@AfterSuite(alwaysRun = true)
+	public void terminate() {
+		DriverManager.getDriver().quit();
+	}
+
+}
+

@@ -1,0 +1,24 @@
+package com.googlemaps.automation;
+
+import org.testng.annotations.Test;
+
+public class AppiumSetupTest {
+	@Test
+	public static AppiumDriver<MobileElement> androidSetup(String deviceName, String URL,String appPackage) throws MalformedURLException {
+		
+		caps.setCapability("app", System.getProperty("user.dir") + "/Builds/TC4_FCC_3.2_STAG_REL.apk"); //parameterize from xml
+		caps.setCapability("appPackage",appPackage );
+		caps.setCapability("appActivity", "com.freshworks.freshcaller.splashscreen.SplashScreenActivity");
+		caps.setCapability("deviceName",deviceName);
+		caps.setCapability("automationName", "UIAutomator2");
+		//caps.setCapability("eventTimings", true);
+		caps.setCapability("clearSystemFiles",true);
+		caps.setCapability("adbExecTimeout", 600000);
+		//caps.setCapability("noSign", true);
+		caps.setCapability("noReset", true);
+		caps.setCapability("otherApps",System.getProperty("user.dir") + "/Builds/TC4_FCC_3.2_STAG_REL.apk");
+		driver = new AndroidDriver<MobileElement>(new URL("http://" + URL + "/wd/hub"), caps);
+		return driver;
+	}
+
+}

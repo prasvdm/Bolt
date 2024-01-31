@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Android Sanity">
+
+	<test thread-count="1" name="Android Emulator">
+		<parameter name="OS_" value="android" />
+		<parameter name="deviceName_" value="emulator-5554"/>
+		<!--  <parameter name="UDID_" value="" />
+		<parameter name="platformVersion_" value="" /> -->
+		<parameter name="URL_" value="127.0.0.1:4723" />
+		<parameter name="appPackage_" value="com.freshworks.freshcaller.staging"/>
+		<parameter name="ENV" value=""/>
+		<!-- <parameter name="appPath_" value="" /> -->
+		<groups>
+			<run>			
+				<include name="SanityCorrect" />
+			</run>
+		</groups>
+	
+		<classes>
+            <class name="com.freshcaller.app.coretests.LoginTests" />
+			<class name="com.freshcaller.app.coretests.ContactTests" />
+			<class name="com.freshcaller.app.coretests.CallTests" />
+		</classes>
+	
+		
+	</test> <!-- Test -->
+	
+</suite> <!-- Suite -->

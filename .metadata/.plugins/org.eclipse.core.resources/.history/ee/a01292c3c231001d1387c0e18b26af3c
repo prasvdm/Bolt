@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Android Run">
+
+	<test thread-count="1" name="GoogleMaps">
+		<parameter name="OS_" value="android" />
+		<parameter name="udid" value="ce0cde3f"/>
+		<parameter name="URL_" value="127.0.0.1:4723" />
+		<parameter name="appPackage_" value="com.google.android.apps.maps"/>
+		<parameter name="appActivity" value="com.google.android.maps.MapsActivity"/>
+		<!-- <groups>
+			<run>			
+				<include name="GoogleMaps" />
+			</run>
+		</groups>
+		-->
+	<packages>
+	<package name="com.googlemaps.Tests"/>
+	</packages>
+				
+	</test> 	
+</suite>

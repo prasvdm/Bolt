@@ -1,0 +1,88 @@
+package com.googlemaps.utils;
+
+
+
+import java.io.File;
+import java.security.KeyFactory;
+import java.security.NoSuchAlgorithmException;
+import java.security.PrivateKey;
+import java.security.spec.InvalidKeySpecException;
+import java.security.spec.PKCS8EncodedKeySpec;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
+
+import org.apache.commons.codec.binary.Base64;
+
+import com.api.base.BaseTest;
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.aventstack.extentreports.reporter.configuration.Theme;
+
+import io.jsonwebtoken.Jwts;
+import io.jsonwebtoken.SignatureAlgorithm;
+
+public class Utils extends BaseTest {
+
+	private static ExtentReports extent;
+
+	public ExtentReports createInstance() {
+
+		if (org.toLowerCase().equals("fd")) {
+			org = "FreshDesk Support Desk";
+		} else if (org.toLowerCase().equals("fc")) {
+			org = "FreshDesk Messaging Agent";
+		} else if (org.toLowerCase().equals("fcsdk")) {
+			org = "FreshDesk Messaging SDK";
+		} else if (org.toLowerCase().equals("fca")) {
+			org = "FreshDesk Contact Center";
+		}
+
+		Date d = new Date();
+		String fileName = "AutomationReport_" + "_" + d.toString().replace(":", "_").replace(" ", "_") + ".html";
+		String directory = System.getProperty("user.dir") + "/reports/";
+		new File(directory).mkdirs();
+		String path = directory + fileName;
+		ExtentSparkReporter htmlReporter = new ExtentSparkReporter(path);
+		htmlReporter.config().setEncoding("uft-8");
+		htmlReporter.config().setDocumentTitle("Automation Reports");
+		htmlReporter.config().setReportName("Automation Test Results");
+		htmlReporter.config().setTheme(Theme.STANDARD);
+		extent = new ExtentReports();
+		extent.attachReporter(htmlReporter);
+		extent.setSystemInfo("Organization", org);
+		extent.setSystemInfo("Enviroment", env);
+		return extent;
+	}
+
+	public static String generateToken(String uuid, String name) throws NoSuchAlgorithmException, InvalidKeySpecException {
+		PrivateKey privateKey = getPrivateKey();
+		String token = null;
+		try {
+			Map<String, Object> claims = new HashMap<String, Object>();
+			claims.put("freshchat_uuid", uuid);
+			claims.put("first_name", name);
+			claims.put("last_name", "test@mail.com");
+			claims.put("reference_id", "newone1");
+			token = Jwts.builder().setClaims(claims).signWith(SignatureAlgorithm.RS256, privateKey).compact();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return token;
+	}
+
+	private static PrivateKey getPrivateKey() throws NoSuchAlgorithmException, InvalidKeySpecException {
+
+		String rsaPrivateKey = prop.getProperty("jwtPrivateKey");
+		rsaPrivateKey = rsaPrivateKey.replace("-----BEGIN RSA PRIVATE KEY-----", "");
+		rsaPrivateKey = rsaPrivateKey.replace("-----END RSA PRIVATE KEY-----", "");
+		
+		java.security.Security.addProvider(new org.bouncycastle.jce.provider.BouncyCastleProvider());
+		PKCS8EncodedKeySpec keySpec = new PKCS8EncodedKeySpec(Base64.decodeBase64(rsaPrivateKey));
+		KeyFactory kf = KeyFactory.getInstance("RSA");
+		PrivateKey privKey = kf.generatePrivate(keySpec);
+		return privKey;
+	}
+}
+

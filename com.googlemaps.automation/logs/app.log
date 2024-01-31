@@ -1,0 +1,88 @@
+[INFO ] 2022-09-14 04:32:46.661 INFO [main] [com.googlemaps.appframe.BaseTest.driverSetup(BaseTest.java:69)] - Driver launched
+[INFO ] 2022-09-14 05:54:27.506 INFO [main] [com.googlemaps.appframe.BaseTest.driverSetup(BaseTest.java:69)] - Driver launched
+[INFO ] 2022-09-14 05:54:27.554 INFO [main] [com.googlemaps.Tests.SearchTest.searchPlace(SearchTest.java:47)] - At start of Search place test case
+[INFO ] 2022-09-14 05:56:10.994 INFO [main] [com.googlemaps.appframe.BaseTest.driverSetup(BaseTest.java:69)] - Driver launched
+[INFO ] 2022-09-14 05:56:11.049 INFO [main] [com.googlemaps.Tests.SearchTest.searchPlace(SearchTest.java:47)] - At start of Search place test case
+[INFO ] 2022-09-14 05:59:28.712 INFO [main] [com.googlemaps.appframe.BaseTest.driverSetup(BaseTest.java:69)] - Driver launched
+[INFO ] 2022-09-14 05:59:28.775 INFO [main] [com.googlemaps.Tests.SearchTest.searchPlace(SearchTest.java:47)] - At start of Search place test case
+[INFO ] 2022-09-14 06:01:49.553 INFO [main] [com.googlemaps.appframe.BaseTest.driverSetup(BaseTest.java:69)] - Driver launched
+[INFO ] 2022-09-14 06:01:49.613 INFO [main] [com.googlemaps.Tests.SearchTest.searchPlace(SearchTest.java:47)] - At start of Search place test case
+[INFO ] 2022-09-14 06:04:27.462 INFO [main] [com.googlemaps.appframe.BaseTest.driverSetup(BaseTest.java:69)] - Driver launched
+[INFO ] 2022-09-14 06:04:27.514 INFO [main] [com.googlemaps.Tests.SearchTest.searchPlace(SearchTest.java:47)] - At start of Search place test case
+[INFO ] 2022-09-14 06:06:41.621 INFO [main] [com.googlemaps.appframe.BaseTest.driverSetup(BaseTest.java:69)] - Driver launched
+[INFO ] 2022-09-14 06:06:41.678 INFO [main] [com.googlemaps.Tests.SearchTest.searchPlace(SearchTest.java:47)] - At start of Search place test case
+[INFO ] 2022-09-14 06:27:35.555 INFO [main] [com.googlemaps.appframe.BaseTest.driverSetup(BaseTest.java:69)] - Driver launched
+[INFO ] 2022-09-14 06:27:35.645 INFO [main] [com.googlemaps.Tests.SearchTest.searchPlace(SearchTest.java:47)] - At start of Search place test case
+[INFO ] 2022-09-14 06:28:33.762 INFO [main] [com.googlemaps.appframe.BaseTest.driverSetup(BaseTest.java:69)] - Driver launched
+[INFO ] 2022-09-14 06:28:33.790 INFO [main] [com.googlemaps.Tests.SearchTest.searchPlace(SearchTest.java:47)] - At start of Search place test case
+[INFO ] 2022-09-14 06:29:30.591 INFO [main] [com.googlemaps.appframe.BaseTest.driverSetup(BaseTest.java:69)] - Driver launched
+[INFO ] 2022-09-14 06:29:30.699 INFO [main] [com.googlemaps.Tests.SearchTest.searchPlace(SearchTest.java:47)] - At start of Search place test case
+[INFO ] 2022-09-14 06:29:33.314 INFO [main] [com.googlemaps.appframe.MobileUI.waitAndClickOnElement(MobileUI.java:21)] - Clicked on: Searchbox
+[INFO ] 2022-09-14 06:41:27.114 INFO [main] [com.googlemaps.appframe.BaseTest.driverSetup(BaseTest.java:69)] - Driver launched
+[INFO ] 2022-09-14 06:41:27.206 INFO [main] [com.googlemaps.Tests.SearchTest.searchPlace(SearchTest.java:47)] - At start of Search place test case
+[INFO ] 2022-09-14 06:41:29.239 INFO [main] [com.googlemaps.appframe.MobileUI.waitAndClickOnElement(MobileUI.java:21)] - Clicked on: Searchbox
+[INFO ] 2022-09-14 06:42:01.671 INFO [main] [com.googlemaps.appframe.BaseTest.driverSetup(BaseTest.java:69)] - Driver launched
+[INFO ] 2022-09-14 06:42:01.766 INFO [main] [com.googlemaps.Tests.SearchTest.searchPlace(SearchTest.java:47)] - At start of Search place test case
+[INFO ] 2022-09-14 06:42:04.131 INFO [main] [com.googlemaps.appframe.MobileUI.waitAndClickOnElement(MobileUI.java:21)] - Clicked on: Searchbox
+[INFO ] 2022-09-14 06:44:26.162 INFO [main] [com.googlemaps.appframe.BaseTest.driverSetup(BaseTest.java:69)] - Driver launched
+[INFO ] 2022-09-14 06:44:26.233 INFO [main] [com.googlemaps.Tests.SearchTest.searchPlace(SearchTest.java:47)] - At start of Search place test case
+[INFO ] 2022-09-14 06:44:28.327 INFO [main] [com.googlemaps.appframe.MobileUI.waitAndClickOnElement(MobileUI.java:21)] - Clicked on: Searchbox
+[INFO ] 2022-09-14 07:01:56.798 INFO [main] [com.googlemaps.appframe.BaseTest.driverSetup(BaseTest.java:69)] - Driver launched
+[INFO ] 2022-09-14 07:01:56.857 INFO [main] [com.googlemaps.Tests.SearchTest.searchPlace(SearchTest.java:47)] - At start of Search place test case
+[INFO ] 2022-09-14 07:01:58.975 INFO [main] [com.googlemaps.appframe.MobileUI.waitAndClickOnElement(MobileUI.java:24)] - Clicked on: Searchbox
+[INFO ] 2022-09-14 07:10:29.840 INFO [main] [com.googlemaps.appframe.BaseTest.driverSetup(BaseTest.java:69)] - Driver launched
+[INFO ] 2022-09-14 07:10:29.928 INFO [main] [com.googlemaps.Tests.SearchTest.searchPlace(SearchTest.java:47)] - At start of Search place test case
+[INFO ] 2022-09-14 07:10:31.864 INFO [main] [com.googlemaps.appframe.MobileUI.waitAndClickOnElement(MobileUI.java:24)] - Clicked on: Searchbox
+[INFO ] 2022-09-14 07:10:36.138 INFO [main] [com.googlemaps.appframe.MobileUI.waitAndTypeOnTextField(MobileUI.java:37)] - Entered text: Nikola Bar-buffeein the text field SearchBox
+[INFO ] 2022-09-14 07:11:38.441 INFO [main] [com.googlemaps.appframe.BaseTest.driverSetup(BaseTest.java:69)] - Driver launched
+[INFO ] 2022-09-14 07:11:38.513 INFO [main] [com.googlemaps.Tests.SearchTest.searchPlace(SearchTest.java:47)] - At start of Search place test case
+[INFO ] 2022-09-14 07:11:42.339 INFO [main] [com.googlemaps.appframe.MobileUI.waitAndClickOnElement(MobileUI.java:24)] - Clicked on: Searchbox
+[INFO ] 2022-09-14 07:11:50.677 INFO [main] [com.googlemaps.appframe.MobileUI.waitAndTypeOnTextField(MobileUI.java:37)] - Entered text: Nikola Bar-buffeein the text field SearchBox
+[INFO ] 2022-09-14 07:31:27.354 INFO [main] [com.googlemaps.appframe.BaseTest.driverSetup(BaseTest.java:69)] - Driver launched
+[INFO ] 2022-09-14 07:31:27.400 INFO [main] [com.googlemaps.Tests.SearchTest.searchPlace(SearchTest.java:47)] - At start of Search place test case
+[INFO ] 2022-09-14 07:31:29.123 INFO [main] [com.googlemaps.appframe.MobileUI.waitAndClickOnElement(MobileUI.java:24)] - Clicked on: Searchbox
+[INFO ] 2022-09-14 07:31:30.587 INFO [main] [com.googlemaps.appframe.MobileUI.waitAndTypeOnTextField(MobileUI.java:37)] - Entered text: Nikola Bar-buffeein the text field SearchBox
+[INFO ] 2022-09-14 07:32:13.847 INFO [main] [com.googlemaps.appframe.BaseTest.driverSetup(BaseTest.java:69)] - Driver launched
+[INFO ] 2022-09-14 07:32:13.891 INFO [main] [com.googlemaps.Tests.SearchTest.searchPlace(SearchTest.java:47)] - At start of Search place test case
+[INFO ] 2022-09-14 07:32:16.518 INFO [main] [com.googlemaps.appframe.MobileUI.waitAndClickOnElement(MobileUI.java:24)] - Clicked on: Searchbox
+[INFO ] 2022-09-14 07:32:16.906 INFO [main] [com.googlemaps.appframe.MobileUI.waitAndTypeOnTextField(MobileUI.java:37)] - Entered text: Nikola Bar-buffeein the text field SearchBox
+[INFO ] 2022-09-14 07:35:18.742 INFO [main] [com.googlemaps.appframe.BaseTest.driverSetup(BaseTest.java:69)] - Driver launched
+[INFO ] 2022-09-14 07:35:18.783 INFO [main] [com.googlemaps.Tests.SearchTest.searchPlace(SearchTest.java:47)] - At start of Search place test case
+[INFO ] 2022-09-14 07:35:20.479 INFO [main] [com.googlemaps.appframe.MobileUI.waitAndClickOnElement(MobileUI.java:24)] - Clicked on: Searchbox
+[INFO ] 2022-09-14 07:35:21.830 INFO [main] [com.googlemaps.appframe.MobileUI.waitAndTypeOnTextField(MobileUI.java:37)] - Entered text: Nikola Bar-buffein the text field SearchBox
+[INFO ] 2022-09-14 07:44:41.600 INFO [main] [com.googlemaps.appframe.BaseTest.driverSetup(BaseTest.java:69)] - Driver launched
+[INFO ] 2022-09-14 07:44:41.644 INFO [main] [com.googlemaps.Tests.SearchTest.searchPlace(SearchTest.java:47)] - At start of Search place test case
+[INFO ] 2022-09-14 07:44:42.643 INFO [main] [com.googlemaps.appframe.MobileUI.waitAndClickOnElement(MobileUI.java:26)] - Clicked on: Searchbox
+[INFO ] 2022-09-14 07:46:52.002 INFO [main] [com.googlemaps.appframe.BaseTest.driverSetup(BaseTest.java:69)] - Driver launched
+[INFO ] 2022-09-14 07:46:52.037 INFO [main] [com.googlemaps.Tests.SearchTest.searchPlace(SearchTest.java:47)] - At start of Search place test case
+[INFO ] 2022-09-14 07:46:53.045 INFO [main] [com.googlemaps.appframe.MobileUI.waitAndClickOnElement(MobileUI.java:26)] - Clicked on: Searchbox
+[INFO ] 2022-09-14 08:03:50.800 INFO [main] [com.googlemaps.appframe.BaseTest.driverSetup(BaseTest.java:69)] - Driver launched
+[INFO ] 2022-09-14 08:03:50.888 INFO [main] [com.googlemaps.Tests.SearchTest.searchPlace(SearchTest.java:47)] - At start of Search place test case
+[INFO ] 2022-09-14 08:03:51.873 INFO [main] [com.googlemaps.appframe.MobileUI.waitAndClickOnElement(MobileUI.java:26)] - Clicked on: Searchbox
+[INFO ] 2022-09-14 08:06:55.427 INFO [main] [com.googlemaps.appframe.BaseTest.driverSetup(BaseTest.java:69)] - Driver launched
+[INFO ] 2022-09-14 08:06:55.463 INFO [main] [com.googlemaps.Tests.SearchTest.searchPlace(SearchTest.java:47)] - At start of Search place test case
+[INFO ] 2022-09-14 08:06:56.867 INFO [main] [com.googlemaps.appframe.MobileUI.waitAndClickOnElement(MobileUI.java:26)] - Clicked on: Searchbox
+[INFO ] 2022-09-14 08:08:21.388 INFO [main] [com.googlemaps.appframe.BaseTest.driverSetup(BaseTest.java:69)] - Driver launched
+[INFO ] 2022-09-14 08:08:21.425 INFO [main] [com.googlemaps.Tests.SearchTest.searchPlace(SearchTest.java:47)] - At start of Search place test case
+[INFO ] 2022-09-14 08:08:22.766 INFO [main] [com.googlemaps.appframe.MobileUI.waitAndClickOnElement(MobileUI.java:26)] - Clicked on: Searchbox
+[INFO ] 2022-09-14 08:10:32.087 INFO [main] [com.googlemaps.appframe.BaseTest.driverSetup(BaseTest.java:69)] - Driver launched
+[INFO ] 2022-09-14 08:10:32.137 INFO [main] [com.googlemaps.Tests.SearchTest.searchPlace(SearchTest.java:47)] - At start of Search place test case
+[INFO ] 2022-09-14 08:10:33.538 INFO [main] [com.googlemaps.appframe.CommonMethods.waitAndClickOnElement(CommonMethods.java:26)] - Clicked on: Searchbox
+[INFO ] 2022-09-14 08:11:52.676 INFO [main] [com.googlemaps.appframe.BaseTest.driverSetup(BaseTest.java:69)] - Driver launched
+[INFO ] 2022-09-14 08:11:52.725 INFO [main] [com.googlemaps.Tests.SearchTest.searchPlace(SearchTest.java:47)] - At start of Search place test case
+[INFO ] 2022-09-14 08:11:54.168 INFO [main] [com.googlemaps.appframe.CommonMethods.waitAndClickOnElement(CommonMethods.java:26)] - Clicked on: Searchbox
+[INFO ] 2022-09-14 08:12:33.519 INFO [main] [com.googlemaps.appframe.BaseTest.driverSetup(BaseTest.java:69)] - Driver launched
+[INFO ] 2022-09-14 08:12:33.558 INFO [main] [com.googlemaps.Tests.SearchTest.searchPlace(SearchTest.java:47)] - At start of Search place test case
+[INFO ] 2022-09-14 08:12:35.407 INFO [main] [com.googlemaps.appframe.CommonMethods.waitAndClickOnElement(CommonMethods.java:26)] - Clicked on: Searchbox
+[INFO ] 2022-09-14 08:14:07.326 INFO [main] [com.googlemaps.appframe.BaseTest.driverSetup(BaseTest.java:69)] - Driver launched
+[INFO ] 2022-09-14 08:14:07.368 INFO [main] [com.googlemaps.Tests.SearchTest.searchPlace(SearchTest.java:47)] - At start of Search place test case
+[INFO ] 2022-09-14 08:14:08.302 INFO [main] [com.googlemaps.appframe.CommonMethods.waitAndClickOnElement(CommonMethods.java:26)] - Clicked on: Searchbox
+[INFO ] 2022-09-14 08:15:00.182 INFO [main] [com.googlemaps.appframe.BaseTest.driverSetup(BaseTest.java:69)] - Driver launched
+[INFO ] 2022-09-14 08:15:00.248 INFO [main] [com.googlemaps.Tests.SearchTest.searchPlace(SearchTest.java:47)] - At start of Search place test case
+[INFO ] 2022-09-14 08:15:03.090 INFO [main] [com.googlemaps.appframe.CommonMethods.waitAndClickOnElement(CommonMethods.java:26)] - Clicked on: Searchbox
+[INFO ] 2022-09-14 08:15:37.902 INFO [main] [com.googlemaps.appframe.BaseTest.driverSetup(BaseTest.java:69)] - Driver launched
+[INFO ] 2022-09-14 08:15:37.971 INFO [main] [com.googlemaps.Tests.SearchTest.searchPlace(SearchTest.java:47)] - At start of Search place test case
+[INFO ] 2022-09-14 08:15:40.545 INFO [main] [com.googlemaps.appframe.CommonMethods.waitAndClickOnElement(CommonMethods.java:26)] - Clicked on: Searchbox
+[INFO ] 2022-09-14 08:17:55.539 INFO [main] [com.googlemaps.appframe.BaseTest.driverSetup(BaseTest.java:69)] - Driver launched
+[INFO ] 2022-09-14 08:17:55.599 INFO [main] [com.googlemaps.Tests.SearchTest.searchPlace(SearchTest.java:47)] - At start of Search place test case
+[INFO ] 2022-09-14 08:17:57.672 INFO [main] [com.googlemaps.appframe.CommonMethods.waitAndClickOnElement(CommonMethods.java:26)] - Clicked on: Searchbox

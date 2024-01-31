@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;com.GoogleMaps.automation&apos; to &apos;com.googlemaps.automation&apos;&#x0A;- Original element: &apos;com.GoogleMaps.automation&apos;&#x0A;- Renamed element: &apos;com.GoogleMaps.automation&apos;&#x0A;- Update references to refactored element" description="Rename Java project &apos;com.GoogleMaps.automation&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=com.GoogleMaps.automation" name="com.googlemaps.automation" references="true" stamp="1662777207671" version="1.0"/>
+</session>

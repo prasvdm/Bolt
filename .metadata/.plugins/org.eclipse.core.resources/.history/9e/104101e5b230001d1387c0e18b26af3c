@@ -1,0 +1,5 @@
+package com.googlemaps.automation;
+
+public class AppiumSetupTest {
+
+}

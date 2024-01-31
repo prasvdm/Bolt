@@ -1,0 +1,84 @@
+package com.googlemaps.appframe;
+
+import java.util.Random;
+
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.MobileElement;
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.nativekey.AndroidKey;
+import io.appium.java_client.android.nativekey.KeyEvent;
+
+public class CommonMethods extends BaseTest{
+	public AppiumDriver<MobileElement> driver;
+
+	public CommonMethods(AppiumDriver<MobileElement> driver) {
+		this.driver = driver;
+	}
+
+	public boolean waitAndClickOnElement(MobileElement el, String input, int waitTime) {
+
+		WebDriverWait wait = new WebDriverWait(driver, waitTime);
+		if(wait.until(ExpectedConditions.visibilityOf(el)) != null) {
+		el.click();			
+		log.info("Clicked on: " + input);
+		return true;
+		}
+		else {
+		log.error("Element not found / Unable to click on: " + el);
+		return false;
+		}
+	}
+		public boolean waitAndTypeOnTextField(MobileElement el, String input, String object_name,int waitTime) {
+			
+			WebDriverWait wait = new WebDriverWait(driver, waitTime);
+			if(wait.until(ExpectedConditions.visibilityOf(el))!=null) {
+			el.sendKeys(input);
+			log.info("Entered text: "+input+ "in the text field " +object_name);
+			return true;
+			}
+			else{
+			log.error("Element not found / Unable to type on: " + object_name);
+			return false;
+		}
+		
+	}
+		public void hideKeyBoard() {
+			driver.hideKeyboard();
+		}
+		public void pressEnter() {
+			try {
+		((AndroidDriver<MobileElement>) driver).pressKey(new KeyEvent(AndroidKey.ENTER));
+			}
+			catch(Exception e) {
+				e.printStackTrace();
+				log.error("Couldn't press enter");
+			}
+
+		}
+		
+		public void sendHumanKeys(MobileElement element, String text) {
+		    Random r = new Random();
+		    for(int i = 0; i < text.length(); i++) {
+		        try {
+		            Thread.sleep((int)(r.nextGaussian() * 15 + 100));
+		            if(i>-1) {
+		            --i;
+		            }
+		        } catch(InterruptedException e) {}
+		        String s = new StringBuilder().append(text.charAt(i)).toString();
+//		        element.setValue(s);
+//		        AndroidKey Androidkeys = AndroidKey.;
+//		        ((AndroidDriver<MobileElement>) driver).pressKey(new KeyEvent(Androidkeys));
+		        driver.getKeyboard().sendKeys(s);
+		        
+		    }
+		}
+	
+}
+	
+	
+	
+

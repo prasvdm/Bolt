@@ -1,0 +1,73 @@
+package com.googlemaps.appframe;
+
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.MobileElement;
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.nativekey.AndroidKey;
+import io.appium.java_client.android.nativekey.KeyEvent;
+
+public class MobileUI extends BaseTest{
+	public AppiumDriver<MobileElement> driver;
+
+	public MobileUI(AppiumDriver<MobileElement> driver) {
+		this.driver = driver;
+	}
+
+	public boolean waitAndClickOnElement(MobileElement el, String input, int waitTime) {
+
+		WebDriverWait wait = new WebDriverWait(driver, waitTime);
+		if(wait.until(ExpectedConditions.visibilityOf(el)) != null) {
+		el.click();			
+		log.info("Clicked on: " + input);
+		return true;
+		}
+		else {
+		log.error("Element not found / Unable to click on: " + el);
+		return false;
+		}
+	}
+		public boolean waitAndTypeOnTextField(MobileElement el, String input, String object_name,int waitTime) {
+			
+			WebDriverWait wait = new WebDriverWait(driver, waitTime);
+			if(wait.until(ExpectedConditions.visibilityOf(el))!=null) {
+			el.sendKeys(input);
+			log.info("Entered text: "+input+ "in the text field " +object_name);
+			return true;
+			}
+			else{
+			log.error("Element not found / Unable to type on: " + object_name);
+			return false;
+		}
+		
+	}
+		public void hideKeyBoard() {
+			driver.hideKeyboard();
+		}
+		public boolean typeOnTextFieldandPressEnter(MobileElement text_field, String input, String object_name) {
+			MobileElement mobileObject = (MobileElement) findElement(text_field);
+			if (mobileObject.isEnabled()) {
+				mobileObject.click();
+				mobileObject.sendKeys(input);
+				log.info("Entered text: " + input + " in text field" + object_name);
+				//test.get().info(object_name + " field updated with value: " + input);
+				((AndroidDriver<MobileElement>) driver).pressKey(new KeyEvent(AndroidKey.ENTER));
+				return true;
+			} else {
+				log.error("Element not fount / Unable to type on: " + object_name);
+				return false;
+			}
+		}
+
+		private MobileElement findElement(MobileElement text_field) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+	
+}
+	
+	
+	
+

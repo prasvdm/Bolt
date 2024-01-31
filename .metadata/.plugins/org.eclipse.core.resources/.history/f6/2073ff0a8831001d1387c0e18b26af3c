@@ -1,0 +1,35 @@
+package com.googlemaps.Tests;
+
+import java.io.InputStream;
+import java.util.List;
+import java.util.Map;
+
+import com.googlemaps.appframe.BaseTest;
+
+public class SearchTest extends BaseTest{
+	
+	static InputStream input = null;
+	static Map<String, String> dataTable = new HashMap<String, String>();
+	List<String> propertyFiles = new ArrayList<String>();
+	TestDataUtils data = new TestDataUtils();
+	String domain;
+	LoginPage login;
+	
+	
+
+	@BeforeMethod(alwaysRun = true)
+
+	public void startApp() {		
+		launchApp();
+	}
+
+
+	@BeforeClass(alwaysRun = true)
+	public void dataSetup() throws IOException, InterruptedException {
+		
+		data = new TestDataUtils();
+		dataTable = data.initData(propertyFiles);
+		
+	}
+
+}

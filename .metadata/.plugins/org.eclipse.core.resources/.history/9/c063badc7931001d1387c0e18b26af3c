@@ -1,0 +1,5 @@
+import com.googlemaps.appframe.BaseTest;
+
+public class Sea extends BaseTest {
+
+}

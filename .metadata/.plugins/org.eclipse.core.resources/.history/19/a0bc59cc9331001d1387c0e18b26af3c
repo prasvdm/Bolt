@@ -1,0 +1,47 @@
+package com.googlemaps.Tests;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import com.googlemaps.appframe.BaseTest;
+import com.googlemaps.appframe.TestDataUtils;
+
+public class SearchTest extends BaseTest{
+	
+	//static InputStream input = null;
+	static Map<String, String> dataTable = new HashMap<String, String>();
+	//List<String> propertyFiles = new ArrayList<String>();
+	TestDataUtils data;
+	
+	@BeforeMethod(alwaysRun = true)
+
+	public void startApp() throws IOException, InterruptedException {		
+		launchApp();
+		
+	}
+
+
+	@BeforeClass(alwaysRun = true)
+	public void dataSetup() throws IOException, InterruptedException {
+		
+		data = new TestDataUtils();
+		dataTable = data.initData();
+		//propertyFiles
+	}
+	
+	@Test
+	public void searchPlace() {
+		System.out.println(dataTable.get("searchText"));
+		
+	}
+	
+
+}

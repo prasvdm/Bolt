@@ -1,0 +1,40 @@
+1662862063783	Rename package 'com.googlemaps.automation'
+1662862073126	Delete element
+1662862130143	Copy package
+1662862139224	Copy package
+1662862987137	Move package
+1662863062134	Rename package 'com.googlemaps.app.Tests'
+1662863091724	Rename package 's'
+1662863167292	Delete element
+1662863253096	Move compilation unit
+1662863277620	Rename resource 'com.googlemaps.Testss'
+1662863329014	Delete element
+1662863412645	Move compilation unit
+1662863470601	Delete element
+1662863490769	Move file
+1662863498242	Delete element
+1662895444966	Delete element
+1662895453037	Delete element
+1662900115206	Delete element
+1662900232766	Delete element
+1662900313131	Delete element
+1662900540893	Delete element
+1662900655068	Move package
+1662900681467	Copy package
+1662900689797	Delete element
+1662901589131	Rename compilation unit 'Logs.java'
+1662912718117	Rename resource 'log4j.properties'
+1662912805649	Delete element
+1662912834481	Delete element
+1662913056133	Delete element
+1662936721269	Delete element
+1662936892385	Rename package 'utils'
+1662937365688	Delete element
+1662938449402	Delete element
+1662938476142	Delete element
+1663110642991	Delete element
+1663110680310	Rename package 'com.googlemaps.pages'
+1663111773971	Delete element
+1663112289513	Rename package 'com.googlemaps.Pages'
+1663112338012	Delete element
+1663123190946	Rename type 'MobileUI'

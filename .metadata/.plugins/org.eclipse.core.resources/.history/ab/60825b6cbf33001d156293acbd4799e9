@@ -1,0 +1,8 @@
+package com.googlemaps.Pages;
+
+import com.googlemaps.appframe.BaseTest;
+
+public class SearchPage  extends BaseTest{
+	
+
+}

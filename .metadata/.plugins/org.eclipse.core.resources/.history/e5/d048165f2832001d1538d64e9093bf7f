@@ -1,0 +1,5 @@
+[INFO ] 2022-09-12 04:22:08.064 INFO [main] [utils.Listeners.TestListener.onStart(TestListener.java:26)] - I am in onStart method GoogleMaps
+[INFO ] 2022-09-12 04:22:18.840 INFO [main] [utils.Listeners.TestListener.onTestStart(TestListener.java:37)] - searchPlace test is starting.
+[INFO ] 2022-09-12 04:22:18.844 INFO [main] [utils.Listeners.TestListener.onTestSuccess(TestListener.java:41)] - searchPlace test is succeed.
+[INFO ] 2022-09-12 04:22:19.124 INFO [main] [utils.Listeners.TestListener.onTestFailure(TestListener.java:47)] - searchPlace test is failed.
+[INFO ] 2022-09-12 04:22:20.060 INFO [main] [utils.Listeners.TestListener.onFinish(TestListener.java:31)] - I am in onFinish method GoogleMaps

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Android Run]">
+  <listeners>
+    <listener class-name="com.googlemaps.utils.TestListeners"/>
+  </listeners>
+  <test thread-count="5" name="GoogleMaps(failed)">
+    <parameter name="appActivity" value="com.google.android.maps.MapsActivity"/>
+    <parameter name="URL_" value="127.0.0.1:4723"/>
+    <parameter name="OS_" value="android"/>
+    <parameter name="udid" value="emulator-5554"/>
+    <parameter name="appPackage_" value="com.google.android.apps.maps"/>
+    <classes>
+      <class name="com.googlemaps.Tests.SearchTest">
+        <methods>
+          <include name="driverSetup"/>
+          <include name="searchPlace"/>
+          <include name="dataSetup1"/>
+          <include name="terminate"/>
+          <include name="startApp"/>
+        </methods>
+      </class> <!-- com.googlemaps.Tests.SearchTest -->
+    </classes>
+  </test> <!-- GoogleMaps(failed) -->
+</suite> <!-- Failed suite [Android Run] -->
