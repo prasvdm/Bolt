@@ -22,8 +22,7 @@ public class DriverManager {
 		androidSetup(UDID,appPackage,appActivity,URL);
 		return driver;
 	}
-	
-	
+
 	public static AppiumDriver<MobileElement> androidSetup(String UDID, String appPackage, String appActivity, String uRL) throws MalformedURLException {
 		
 		caps.setCapability("appPackage", appPackage);

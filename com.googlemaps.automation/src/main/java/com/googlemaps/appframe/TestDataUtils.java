@@ -4,20 +4,17 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 import java.util.stream.Collectors;
 
 public class TestDataUtils {
 	public Map<String, String> initData() throws IOException {
-//List<String> fileName
+
 		Properties prop = new Properties();
 		InputStream input = null;
 		Map<String, String> dataTable = new HashMap<String, String>();
-		
 
-		
 			String directory = System.getProperty("user.dir") +"/src/test/resources/TestData/searchData.properties";
 			input = new FileInputStream(directory);
 			prop.load(input);

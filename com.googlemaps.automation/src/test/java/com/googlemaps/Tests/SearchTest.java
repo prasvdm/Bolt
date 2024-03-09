@@ -14,15 +14,14 @@ import org.testng.annotations.Test;
 
 import com.googlemaps.Pages.SearchPage;
 import com.googlemaps.appframe.BaseTest;
-import com.googlemaps.appframe.DriverManager;
 import com.googlemaps.appframe.TestDataUtils;
 
 public class SearchTest extends BaseTest{
 	
-	//static InputStream input = null;
-	//static Map<String, String> dataTable = new HashMap<String, String>();
-	//List<String> propertyFiles = new ArrayList<String>();
-//	TestDataUtils data;
+	static InputStream input = null;
+	static Map<String, String> dataTable = new HashMap<String, String>();
+	List<String> propertyFiles = new ArrayList<String>();
+	TestDataUtils data;
 	SearchPage _searchPage;
 	
 	@BeforeMethod()
@@ -34,13 +33,13 @@ public class SearchTest extends BaseTest{
 
 
 
-//	@BeforeClass()
-//	public void dataSetup() throws IOException, InterruptedException {
-//		
-//		data = new TestDataUtils();
-//		dataTable = data.initData();
-//		//propertyFiles
-//	}
+	@BeforeClass()
+	public void dataSetup() throws IOException, InterruptedException {
+
+		data = new TestDataUtils();
+		dataTable = data.initData();
+		//propertyFiles
+	}
 	
 	@Test
 	public void searchPlace() {
